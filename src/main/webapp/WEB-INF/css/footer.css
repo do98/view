@@ -1,0 +1,64 @@
+.nd1, .nd2, .nd3 {
+	 width: calc(35% - 60px);
+     margin-right: 0 !important;
+}
+
+
+.nd2 a {
+	color:white;
+	text-decoration: none;
+	
+}
+.nd1{
+	float: left;
+}
+.nd2{
+	float: left;
+	color: gray;
+	margin-left: 83px;
+
+}
+.nd3{
+	float: right;
+}
+.footer h3 {
+	position: relative;
+     color: #fff;
+     font-weight: 500;
+     margin-bottom: 15px;
+     margin-left: 30px;
+     
+}
+.footer h3::before{
+     content: '';
+     position: absolute;
+     bottom: -5px;
+     left: 0;
+     width: 50px;
+     height: 2px;
+     background: #f00;
+}
+
+.footer {
+	color: #9e9e9e17;
+	color:white;
+	display:inline-block; 
+	background-color: black;
+	width:100%;
+	margin-right: 0 !important;
+	margin-top:50px;
+	
+}
+.footer p{
+	margin-left: 25px;
+	color: gray
+}
+
+.footer a {
+	color: gray;
+	text-decoration: none;
+}
+.nd3 .info{
+	color: gray;
+	
+}

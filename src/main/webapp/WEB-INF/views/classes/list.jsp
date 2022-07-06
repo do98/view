@@ -7,16 +7,36 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" type="text/css" href="css/style.css"/></link>
+<link rel="stylesheet" type="text/css" href="css/style.css" /></link>
 
 </head>
 <body>
-<%@ include file="header.jsp" %>
-	<h2>List of Users</h2>
-	<a href="/show-form-add" style="text-decoration: none;">ADD</a>
-	<table border="1" style="width: auto; border-collapse: collapse;">
+	
+	<%@ include file="header.jsp"%>
+	
 
-		<tr>
+<div class="nav">
+		<div class="menu">
+			<ul>
+				<li><a href="#">Trang Chủ</a></li>
+				<li><a href="#">Khóa Học</a></li>
+				<li><a href="#">Danh Sách Giáo Viên</a></li>
+				<li><a href="#">Danh Sách Học Sinh</a></li>
+				<li><a href="#">Đào Tạo</a></li>
+				<li><a href="/show-form-add" style="text-decoration: none;">+</a></li>
+
+			</ul>
+		</div>
+		<div class="search">
+			<input type="search" placeholder="Search...">
+			<button><i class="fa-solid fa-magnifying-glass"></i></button>
+		</div>
+	</div>
+	<h2>Danh sách các lớp học</h2>
+	
+	<table border="1">
+
+		<tr style="background: #28abd033;">
 			<th>ID</th>
 			<th>CID</th>
 			<th>Start day</th>
@@ -41,12 +61,14 @@
 				<td><c:out value="${user.timelearn}" /></td>
 				<td><c:out value="${user.status}" /></td>
 				<td><c:out value="${user.userid}" /></td>
-				<td><a href="/show-form-delete/${user.id}">Delete</a></td>
-				<td><a href="/show-form-update/${user.id}">Update</a></td>
-				
+				<td><a href="/show-form-delete/${user.id}"><img
+						alt="delete" src="image/delete.jpg"></a></td>
+				<td><a href="/show-form-update/${user.id}"><img alt="edit"
+						src="image/edit.jpg"></a></td>
+
 			</tr>
 		</c:forEach>
 	</table>
-
+<%@ include file="footer.jsp"%>
 </body>
 </html>
